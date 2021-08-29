@@ -2,8 +2,5 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 #
 - file: intro
-
-#- file: content
-#  sections:
-#    - file: markdown
-#    - file: notebooks
+  sections:
+    - file: what_is_defi

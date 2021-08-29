@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Introduction &#8212; Explaining Smart Contracts</title>
+    <title>What is Defi? &#8212; Explaining Smart Contracts</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -51,7 +51,7 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="What is Defi?" href="what_is_defi.html" />
+    <link rel="prev" title="Introduction" href="intro.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -82,15 +82,15 @@
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
- <li class="toctree-l1 current">
-  <a class="reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
    Introduction
   </a>
  </li>
 </ul>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="what_is_defi.html">
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    What is Defi?
   </a>
  </li>
@@ -135,9 +135,9 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/intro.md"><button type="button"
+        <a class="dropdown-buttons" href="_sources/what_is_defi.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
+                data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
             onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
@@ -155,7 +155,7 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fwhat_is_defi.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -171,11 +171,56 @@
 
             <!-- Launch buttons -->
 
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/what_is_defi.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
         </div>
 
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   What is Defi?
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-is-ethereum">
+   What is Ethereum?
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#accounts">
+   Accounts
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#transactions">
+   Transactions
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -184,12 +229,28 @@
         
               <div>
                 
-  <div class="section" id="introduction">
-<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
-<p>This blog will explore and explain the basic ideas that underlie cryptocurrency and its subfield: decentralized finance. My goal is to present these topics from a intuitive perspective with a focus on the ethereum blockchain.</p>
-<p><strong>About Me:</strong> I am an assistant professor of mathematics at UNG with a background in geometric/algebraic topology.</p>
-<div class="toctree-wrapper compound">
+  <div class="section" id="what-is-defi">
+<h1>What is Defi?<a class="headerlink" href="#what-is-defi" title="Permalink to this headline">¶</a></h1>
+<p>Decentralized finance is a finanical system that permits an exchange of funds defined through a set of rules implemented by a distributed (blockchain) state machine. The participants of decentralized finance agree on the state of the machine, hence the order of transactions, through a consensus system. This is a permissionless-type system.</p>
+<p>The first decentralized financial system appeared on Ethereum. Other blockchains, such as Solana, Avalanche, Fantom, have recently developed their own defi system. We will explore how transactions work, what are automated market makers and decentralized banks. In this blog, we will explore Defi as a participant in the Ethereum ecosystem.</p>
+<p>This blog is a constant work in progress, running on the build fast and break things philosophy. Most of the sections will contain interactive code that can be accessed using the mybinder tab above. The code will be written to interact with the ethereum test net kovan. A guide on how to interact with kovan can be found in the next section.</p>
+<p>If you have questions or notice mistakes, please email me at <a class="reference external" href="mailto:jhb10c&#37;&#52;&#48;protonmail&#46;com">jhb10c<span>&#64;</span>protonmail<span>&#46;</span>com</a>.</p>
 </div>
+<div class="section" id="what-is-ethereum">
+<h1>What is Ethereum?<a class="headerlink" href="#what-is-ethereum" title="Permalink to this headline">¶</a></h1>
+<p>Ethereum is a distributed state machine where there exists one cannonical state. This state contains all accounts, balances, and transactional history. The state of ethereum can be altered according to specific machine code specified by the etheruem virtual machine. To understand how the state is organized, refer to Preethi Kasireddy’s survey “How does Ethereum work, anyway?”. Any participant can alter the state on ethereum. However only one specific account type can intiate a state change.</p>
+</div>
+<div class="section" id="accounts">
+<h1>Accounts<a class="headerlink" href="#accounts" title="Permalink to this headline">¶</a></h1>
+<p>There are two types of accounts on Ethereum: Externally Owned Accounts and Contracts. Both account types have an address and the following properties: a nonce which represents the number of transactions completed; a balance of ether; code (hash); and storage (hash).</p>
+<p>Externally Owned Accounts are controlled by users. They contain an empty code hash and an empty storage hash. They are allowed to generate transactions without receiving any data from other accounts.</p>
+<p>Contracts contain a nonempty code hash and may contain a nonempty storage hash. These types of accounts are controlled by their code hash. Contracts are only allowed to generate a transaction if it has received (call) data from another account.</p>
+</div>
+<div class="section" id="transactions">
+<h1>Transactions<a class="headerlink" href="#transactions" title="Permalink to this headline">¶</a></h1>
+<p>We have been abusing the phrase transaction. Techinally there are two types of transactional calls: transactions and message calls.</p>
+<p>Transactions are only generated by an externally owned account. They are recorded in the state. While message calls are sent to contract accounts. These are function calls to a contract’s code. A transaction may contain numerous message calls which in turn may call other contracts. Message calls are not stored in the state.</p>
+<p>Ethereum executes transactions in sequential order. This is to prevent different transactions from modifiying the state of the same account. For example, if two users called a contract to mint an NFT that had a mint limit of one. The order in which transactions are executed is determined by Miner. As such frontrunning transactions are a reality on Ethereum. To read more about this, please see Dan Robinson’s ‘Ethereum is a Dark Forest’.</p>
 </div>
 
     <script type="text/x-thebe-config">
@@ -217,7 +278,7 @@
         
         <div class='prev-next-bottom'>
             
-    <a class='right-next' id="next-link" href="what_is_defi.html" title="next page">What is Defi?</a>
+    <a class='left-prev' id="prev-link" href="intro.html" title="previous page">Introduction</a>
 
         </div>
         
